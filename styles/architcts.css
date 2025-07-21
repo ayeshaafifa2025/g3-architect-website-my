@@ -10,7 +10,7 @@
 }
 .bg-light{
     background-color: rgba(255, 144, 14, 0.1);
-    
+    /* max-width: 100%; */
     margin: 0 auto;
     margin-bottom: 100px;
     
@@ -85,14 +85,16 @@ margin-bottom: 50px;
     font-weight: 600;
 
 }
-img{
+.banner-pic{
     max-width: 800px;
+     padding-left: 200px;
+     padding-right: 200px;
     height: 400px;
-    padding-left: 200px;
-    padding-right: 200px;
-
+    display: block;
+    margin: 0 auto;
 }
-/* header responsive */
+
+/* header responsive
 /* for small device */
 @media screen and (max-width:576px) {
     header{
@@ -103,7 +105,7 @@ img{
     }
     .nav-links{
         flex-direction: column;
-        padding-left: 10px;
+        /* padding-left: 10px; */
     }
     .second-part{
 
@@ -112,11 +114,11 @@ img{
         padding-left: 150px;
         margin-bottom: 20px;
     }
-    img{
-        max-width: 250px;
+    .banner-pic{
+        width: 270px;
+        height: auto;
+        padding-left: 65px;
         
-        padding-left: 100px;
-        padding-right: 100px;
     }
     .paragraph{
         padding-left: 60px;
@@ -130,11 +132,190 @@ main{
 }
 .team-container{
     align-items: center;
+    display: flex;
+    gap: 100px;
+    margin-bottom: 100px;
+   
+    
+
 }
 .team{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    
+    /* padding-left: 100px; */
 }
 
+.span1{
+font-weight: 500;
+font-size: 2.8rem;
+}
+.span2{
+font-weight: bold;
+font-size: 2.8rem;
+}
+.span3{
+font-weight: bold;
+font-size: 2.8rem;
+color: #FF900E;
+}
+.description{
+    font-weight: 400;
+    font-size: 1rem;
+}
+/* responsive */
+/* for small device */
+@media screen and (max-width:576px) {
+    .team-container{
+        flex-direction: column;
+        padding-right: 80px;
+    }
+    .team{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        
+        
+    }
+}
+.feature-parent{
+    display: flex;
+    gap: 100px;
+    margin-bottom: 130px;
+
+}
+.card{
+    border: 1px solid tomato;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px  0 rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+    padding: 30px 35px;
+    border-radius: 8px;
+    border: none;
+    
+}
+.card-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+.card-description{
+    font-weight: 400;
+    font-size: 1rem;
+}
+.feature-title{
+    font-weight: bold;
+    font-size: 2.8rem;
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+    
+}
+.text-shadow{
+    text-shadow: 0px 4px  0 rgba(0, 0, 0, 0.25);
+}
+.button{
+    padding: 45px 42px;
+}
+.big{
+font-size: 4.06rem;
+font-weight: bold;
+}
+.small{
+font-size: 1.56rem;
+font-weight: 500;
+}
+.pseudo{
+    margin-top: -70px;
+    margin-left: -70px;
+}
+/* responsive */
+/* small device */
+@media screen and (max-width:576px) {
+    .feature-parent{
+        flex-direction: column;
+    }
+    .pseudo{
+        margin: 0px;
+    }
+}
+.box{
+    border: 1px solid #FF900E;
+    width: 240px;
+    height: 240px;
+   
+    padding: 70px 70px;
+    border-radius: 8px;
+}
+.box-parent{
+    margin-top: 100px;
+    display: flex;
+    gap: 70px;
 
 
+
+}
+.flex{
+    margin-bottom: 100px;
+}
+.issue-big{
+font-weight: 600;
+font-size: 2.8rem;
+}
+.issue-small{
+font-weight: semibold;
+font-size: 1.25rem;
+}
+/* small device responsive */
+@media screen and (max-width:576px) {
+    .box-parent{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.logo{
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 100px;
+    filter: grayscale()
+    
+    
+}
+.sponsor-big{
+    font-weight: bold;
+    font-size: 2.8rem;
+}
+.sponsor-small{
+    font-weight: 400;
+    font-size: 1rem;
+}
+.sponsor{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+/* responsive small */
+@media screen and (max-width:576px) {
+    .logo{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+    }
+}
+footer{
+    background-color: #FFF4E7;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px 100px;
+    margin-left: 300px;
+    margin-bottom: 100px;
+    
+}
+/* samll responsive */
+@media screen and (max-width:576px) {
+    footer{
+        max-width: 300px;
+        padding: 5px 10px;
+        margin: 0 auto;
+    }
+}
