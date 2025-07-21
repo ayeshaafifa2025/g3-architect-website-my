@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.work-sans-regular {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.bg-light{
+    background-color: rgba(255, 144, 14, 0.1);
+    
+    margin: 0 auto;
+    margin-bottom: 100px;
+    
+}
+.nav-title{
+    font-size: 2.8rem;
+    font-weight: bold;
+    
+}
+.dark-1{
+    color: rgba(19, 19, 19, 1);
+}
+.dark-2{
+    color: #424242;
+}
+.dark-3{
+    color: rgba(114, 114, 114, 1);
+}
+.nav-bars{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    
+    
+    
+    
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    
+}
+.nav-links a{
+
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #424242;
+}
+.second-part{
+padding-left: 300px;
+
+padding-right: 300px;
+text-align: center;
+max-width: 850px;
+margin: 0 auto;
+margin-bottom: 50px;
+
+}
+.paragraph{
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+.header-title{
+    font-weight: bold;
+    font-size: 4rem;
+    
+
+}
+.btn-primary{
+    border: none;
+    border-radius: 8px;
+    background-color: #FF900E;
+    color: #FFFFFF;
+    padding: 21px 24px 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+
+}
+img{
+    max-width: 800px;
+    height: 400px;
+    padding-left: 200px;
+    padding-right: 200px;
+
+}
+/* header responsive */
+/* for small device */
+@media screen and (max-width:576px) {
+    header{
+        max-width: 576px;
+    }
+    .nav-bars{
+        flex-direction: column;
+    }
+    .nav-links{
+        flex-direction: column;
+        padding-left: 10px;
+    }
+    .second-part{
+
+        max-width: 300px;
+        margin: 0 auto;
+        padding-left: 150px;
+        margin-bottom: 20px;
+    }
+    img{
+        max-width: 250px;
+        
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .paragraph{
+        padding-left: 60px;
+    }
+    .btn-primary{
+        padding-left: 70px;
+    }
+}
+main{
+    max-width: 1440px;
+}
+.team-container{
+    align-items: center;
+}
+.team{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+
